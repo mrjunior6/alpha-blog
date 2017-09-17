@@ -1,0 +1,18 @@
+<h1> New article page </h1>
+
+<%= form_for @article do |f| %>
+	<p>
+		<%= f.label :title %><br/>
+		<%= f.text_field :title %>
+
+	</p>
+	<p>
+		<%= f.label :descripton %><br/>
+		<%= f.text_area :descripton %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+
+
+<% end %>
