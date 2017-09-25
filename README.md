@@ -1,1 +1,1 @@
-My first Ruby on Rails app
+Ruby on Rails application, it's a blog system.
