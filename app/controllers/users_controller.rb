@@ -22,9 +22,15 @@ class UsersController < ApplicationController
 		@user = User.find(params[:id])
 		if @user.update(user_params)
 			flash[:success] = "User was successfully updated"
+			redirect_to articles_path
 		else
 			render 'new'
 		end
+	end
+
+	def show
+		@user = User.find(params[:id])
+
 	end
 
 
