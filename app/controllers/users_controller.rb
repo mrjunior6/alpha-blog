@@ -16,8 +16,9 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 			if @user.save
-				flash[:success] = "User was successfully created"
-				redirect_to articles_path
+				session[:user_id] = @user.id
+				flash[:success] = "Welcome to AlphaBlog - #{@user.username}"
+				redirect_to user_path(@user)
 			else
 				render 'new'
 			end
