@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '3.1.0'
+gem 'rails-controller-testing'
 gem 'bootstrap-will_paginate'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
